@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web 1 - CSS</title>
+
+    <style>
+        .imagem{
+            text-align: center;
+        }
+
+        body{
+             padding-top: 10px;
+        }
+
+        a {
+            font-size: 25px;
+            padding: 10px 30px 10px 30px;
+            border: solid 2px rgb(136, 94, 16);
+            margin-right: 15px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: rgb(172, 13, 13);
+            border-radius: 10px 10px 10px 10px;
+            transition: 0.5s;
+        }
+
+        a:active{
+            font-style: italic;
+        }
+        #t1:hover{
+            background-color: rgb(219, 38, 38);
+        }
+
+        #t2:hover{ 
+            background-color: blueviolet;
+        }
+        #t3:hover{
+            background-color: rgb(180, 57, 133);
+        }
+
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 20px solid transparent;
+            background: linear-gradient(white, white) padding-box, linear-gradient(90deg,rgb(160, 24, 24) 0%, rgb(115, 19, 145) 35%, rgb(175, 97, 8) 100%) border-box;
+            margin-top: 100px;
+        }
+
+        #menu {
+              display: flex;
+              justify-content: space-around;
+        }
+
+        .linha {
+                position: fixed; 
+                bottom: -10px;
+                height: 40px;
+                left: 0px;
+                width: 100%;
+                background-color: rgb(175, 97, 8);
+                transition: 0.3s;
+        }
+
+        .linha:hover{
+            height: 100px;
+            transform: 0.3s;
+        }
+
+        #check{
+            display: none;
+
+        }
+
+    </style>
+</head>
+<body>
+    <input type="checkbox" name="checkbox" id="check">
+
+    <div id="menu">
+    <div> <a id="t1" href="#1">Link 1</a> </div>
+    <div> <a id="t2" href="#2">Link 2</a> </div>
+    <div> <a id="t3" href="#3">Link 3</a> </div>
+
+    </div> 
+    <hr class="linha">
+  <br>
+  <div class="imagem">  <img src="img/klee-pyro-character-genshin-impact.png" alt="klee"> </div>
+
+</body>
+</html>
