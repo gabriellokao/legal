@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web 1 - CSS</title>
+
+    <style>
+        .imagem{
+            text-align: center;
+
+        }
+
+        body{
+             padding-top: 10px;
+        }
+
+        a {
+            font-size: 25px;
+            padding: 10px 30px 10px 30px;
+            border: solid 2px purple;
+            margin-right: 15px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: brown;
+            border-radius: 10px 10px 10px 10px;
+            transition: 0.5s;
+        }
+
+        a:active{
+            font-style: italic;
+        }
+        #t1:hover{
+            background-color: red;
+        }
+
+        #t2:hover{ 
+            background-color: blueviolet;
+        }
+        #t3:hover{
+            background-color: chartreuse;
+        }
+
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 20px solid transparent;
+            background: linear-gradient(white, white) padding-box, linear-gradient(90deg,rgb(160, 24, 24) 0%, rgb(115, 19, 145) 35%, rgb(175, 97, 8) 100%) border-box;
+            margin-top: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <a id="t1" href="#1">Link 1</a>
+    <a id="t2" href="#2">Link 2</a>
+    <a id="t3" href="#3">Link 3</a> <br>
+  <div class="imagem">  <img src="img/klee-pyro-character-genshin-impact.png" alt="klee"> </div>
+
+</body>
+</html>
